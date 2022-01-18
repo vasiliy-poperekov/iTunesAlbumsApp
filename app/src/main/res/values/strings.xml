@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">iTunesAlbumsApp</string>
+    <string name="genre">\"Genre: \"</string>
+    <string name="release_date">Release date</string>
+    <string name="track_count">Track count</string>
+    <string name="no_songs">We can\'t find songs(</string>
+    <string name="search">Search</string>
+    <string name="start_text">Let\'s search for something!</string>
+    <string name="no_albums">We don\'t know this album(</string>
+</resources>
