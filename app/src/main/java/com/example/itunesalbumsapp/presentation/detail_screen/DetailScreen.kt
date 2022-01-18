@@ -10,6 +10,7 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -90,7 +91,7 @@ fun DetailScreen(
         ) {
             when (state) {
                 is DetailScreenContract.State.Start -> {
-                    CircularProgressIndicator()
+                    CircularProgressIndicator(color = Color.LightGray)
                 }
                 is DetailScreenContract.State.Empty -> {
                     Text(text = stringResource(R.string.no_songs))

@@ -58,8 +58,9 @@ fun HomeScreen(
                 },
             colors = TextFieldDefaults.outlinedTextFieldColors(
                 cursorColor = Color.DarkGray,
-                focusedBorderColor = Color.DarkGray
-            )
+                focusedBorderColor = Color.DarkGray,
+            ),
+            maxLines = 1
         )
         Button(
             onClick = {
@@ -100,9 +101,7 @@ fun HomeScreen(
                     Text(text = stringResource(R.string.no_albums))
                 }
                 is Loading -> {
-                    CircularProgressIndicator(
-                        color = Color.LightGray
-                    )
+                    CircularProgressIndicator(color = Color.LightGray)
                 }
                 is Successful -> {
                     LazyColumn(
